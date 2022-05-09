@@ -25,10 +25,17 @@ img {
 }
 
 body {
-  min-height: 100vh;
   background: var(--clr-background);
   font-family: var(--font-family);
   line-height: 1.5;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .card {
