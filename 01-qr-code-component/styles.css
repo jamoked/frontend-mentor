@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+/*- White: hsl(0, 0%, 100%)
+- Light gray: hsl(212, 45%, 89%)
+- Grayish blue: hsl(220, 15%, 55%)
+- Dark blue: hsl(218, 44%, 22%)*/
+:root {
+  --clr-background: hsl(212, 43%, 88%);
+  --clr-card-title-text: hsl(219, 29%, 18%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-card-text: hsl(235, 6%, 57%);
+  --radius: 0.5rem;
+  --font-family: "Outfit", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--clr-background);
+  font-family: var(--font-family);
+  line-height: 1.5;
+}
+
+.card {
+  background: var(--clr-white);
+  width: 90vw;
+  max-width: 320px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-radius: var(--radius);
+}
+
+.card-img {
+  border-radius: var(--radius);
+}
+
+.card-content {
+  padding: 0.5rem;
+}
+
+.card-title {
+  color: var(--clr-card-title-text);
+  margin: 1rem auto;
+}
+
+.card-text {
+  color: var(--clr-card-text);
+  max-width: 90%;
+  margin: 0 auto;
+  font-size: 15px;
+}
+
+.jamoked-footer {
+  text-align: center;
+  margin: 1rem auto;
+}
