@@ -21,3 +21,9 @@ body {
   font-family: var(--font-family);
   line-height: 1.5;
 }
+
+/* .crypto::before {
+  content: url(./images/icon-ethereum.svg);
+  width: 100%;
+  margin-right: 0.25rem;
+} */
