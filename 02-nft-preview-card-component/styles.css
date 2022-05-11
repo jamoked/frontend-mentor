@@ -1,0 +1,23 @@
+/* Variables */
+:root {
+  --clr-background: #fff;
+  --font-family: 'sans-serif';
+}
+
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+body {
+  background: var(--clr-background);
+  font-family: var(--font-family);
+  line-height: 1.5;
+}
