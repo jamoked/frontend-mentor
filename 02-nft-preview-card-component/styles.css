@@ -41,9 +41,11 @@ body {
   padding: 4rem 1.5rem;
   max-width: 1170px;
   margin: 0 auto;
-  /* display: flex;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center; */
+  align-items: center;
 }
 
 .card {
@@ -164,4 +166,13 @@ body {
 .author:hover {
   color: var(--clr-card-crypto);
   cursor: pointer;
+}
+
+.jamoked-footer {
+  text-align: center;
+  margin: 1rem auto;
+  color: var(--clr-card-text);
+}
+.jamoked-footer :is(a, a:visited) {
+  color: var(--clr-card-text);
 }

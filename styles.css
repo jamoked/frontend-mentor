@@ -82,6 +82,7 @@ header h1 {
   border-top-right-radius: var(--radius);
   border-top-left-radius: var(--radius);
   transition: var(--transition);
+  object-fit: cover;
 }
 
 .card-img:hover {
@@ -107,6 +108,9 @@ header h1 {
 /* Card Content */
 .card-content {
   padding: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  /* grid-template-rows: auto auto 1fr auto; */
 }
 .card-title {
   font-size: 1.375rem;
@@ -115,6 +119,7 @@ header h1 {
   display: flex;
   justify-content: space-between;
   margin: 0.5rem auto;
+  width: 100%;
 }
 /* Card Tags */
 .tag-list {
