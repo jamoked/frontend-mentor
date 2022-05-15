@@ -1,0 +1,43 @@
+/* Variables */
+:root {
+  --clr-background: #fff;
+  --font-family: 'sans-serif';
+}
+
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+body {
+  background: var(--clr-background);
+  font-family: var(--font-family);
+  line-height: 1.5;
+}
+
+/* Reset button default styles */
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.jamoked-footer {
+  text-align: center;
+  margin: 1rem auto;
+  color: #333;
+}
+.jamoked-footer :is(a, a:visited) {
+  color: inherit;
+}
