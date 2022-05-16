@@ -68,10 +68,6 @@ header h1 {
   background: var(--clr-white);
   display: grid;
   grid-template-rows: auto 1fr;
-  /* box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px; */
-  /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
-  /* display: flex;
-  flex-direction: column; */
 }
 
 /* Card Image */
@@ -81,7 +77,6 @@ header h1 {
   border-top-right-radius: var(--radius);
   border-top-left-radius: var(--radius);
   overflow: hidden;
-  /* flex: 1; */
 }
 .card-img {
   border-top-right-radius: var(--radius);
@@ -175,14 +170,16 @@ header h1 {
   font-size: 0.9rem;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  /* margin-top: 1rem; */
   margin-top: auto;
 }
 
 .card-links a {
   color: var(--clr-tag-css);
-  /* text-decoration: none; */
+  transition: var(--transition);
+}
+
+.card-links a:hover {
+  color: var(--clr-card-title);
 }
 
 .emoji {
