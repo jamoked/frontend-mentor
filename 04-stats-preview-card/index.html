@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stats Preview Card</title>
     <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <!-- Page Wrapper -->
@@ -19,12 +20,13 @@
             alt="Lab focus group"
             class="hero-img"
           />
+          <div class="img-overlay"></div>
         </header>
         <!-- Card Content -->
         <section class="card-content">
           <!-- Card Title -->
           <h2 class="card-title">
-            Get <span class="title-special">insights</span> that help your
+            Get <span class="text-special">insights</span> that help your
             business grow.
           </h2>
           <!-- Card Text -->
@@ -33,19 +35,29 @@
             regarding revenue, customer experience, and overall efficiency.
           </p>
           <!-- Card Stats -->
-          <div class="stats-container">
+          <ul class="stats-list">
             <!-- Stat 1 -->
-            <p class="stat-number">10k+</p>
-            <p class="stat-name">Companies</p>
+            <li class="stat">
+              <p class="stat-number">10k+</p>
+              <p class="stat-name">Companies</p>
+            </li>
             <!-- Stat 2 -->
-            <p class="stat-number">314</p>
-            <p class="stat-name">Templates</p>
+            <li class="stat">
+              <p class="stat-number">314</p>
+              <p class="stat-name">Templates</p>
+            </li>
             <!-- Stat 3 -->
-            <p class="stat-number">12M+</p>
-            <p class="stat-name">Queries</p>
-          </div>
+            <li class="stat">
+              <p class="stat-number">12M+</p>
+              <p class="stat-name">Queries</p>
+            </li>
+          </ul>
         </section>
       </article>
+      <!-- jamoked Footer -->
+      <footer class="jamoked-footer">
+        <p>🎨 w/ 💘 by <a href="../index.html">@jamoked</a></p>
+      </footer>
     </main>
   </body>
 </html>
