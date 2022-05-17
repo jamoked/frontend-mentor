@@ -22,7 +22,6 @@
 img {
   display: block;
   width: 100%;
-  max-width: 4rem;
 }
 
 ul {
@@ -53,12 +52,16 @@ body {
   justify-content: center;
   align-items: center;
   padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .cards-container {
   border-radius: 0.6rem;
   overflow: hidden;
   max-width: 350px;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 /* Card */
 .card {
@@ -75,6 +78,10 @@ body {
 .card-luxury {
   background: var(--clr-luxury);
   color: var(--clr-luxury);
+}
+
+.icon {
+  max-width: 4rem;
 }
 
 .card-title {
@@ -126,4 +133,24 @@ body {
 }
 .jamoked-footer :is(a, a:visited) {
   color: var(--clr-luxury);
+}
+
+@media screen and (min-width: 1200px) {
+  .cards-container {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 100%;
+  }
+  .icon {
+    max-width: 6rem;
+  }
+  .card-title {
+    font-size: 2.75rem;
+  }
+  .card-text {
+    font-size: 1.1rem;
+    margin-bottom: 8rem;
+  }
+  .btn {
+    font-size: 1.1rem;
+  }
 }
