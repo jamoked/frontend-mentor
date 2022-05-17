@@ -1,10 +1,15 @@
 /* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
 
 /* Variables */
 :root {
-  --clr-background: rgb(149, 190, 255);
-  --clr-white: #fff;
-  --font-family: 'sans-serif';
+  --clr-luxury: hsl(179, 100%, 13%);
+  --clr-sedan: hsl(31, 77%, 52%);
+  --clr-suv: hsl(184, 100%, 22%);
+  --clr-text: hsla(0, 0%, 100%, 0.75);
+  --clr-white: hsl(0, 0%, 95%);
+  --font-text: 'Lexend Deca', sans-serif;
+  --font-title: 'Big Shoulders Display', sans-serif;
 }
 
 /* General Styles */
@@ -17,6 +22,7 @@
 img {
   display: block;
   width: 100%;
+  max-width: 4rem;
 }
 
 ul {
@@ -35,9 +41,80 @@ button {
 }
 
 body {
-  background: var(--clr-background);
-  font-family: var(--font-family);
+  background: var(--clr-white);
+  font-family: var(--font-text);
   line-height: 1.5;
+  /* color: var(--clr-white); */
+}
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.cards-container {
+  border-radius: 0.6rem;
+  overflow: hidden;
+  max-width: 350px;
+}
+/* Card */
+.card {
+  padding: 3rem;
+}
+.card-sedan {
+  background: var(--clr-sedan);
+  color: var(--clr-sedan);
+}
+.card-suv {
+  background: var(--clr-suv);
+  color: var(--clr-suv);
+}
+.card-luxury {
+  background: var(--clr-luxury);
+  color: var(--clr-luxury);
+}
+
+.card-title {
+  font-family: var(--font-title);
+  font-size: 2.5rem;
+  color: var(--clr-white);
+  text-transform: uppercase;
+  margin: 1.5rem 0 1rem 0;
+}
+
+.card-text {
+  color: var(--clr-text);
+  margin-bottom: 2rem;
+  width: 95%;
+  line-height: 1.75;
+}
+
+.btn {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+  background-color: var(--clr-white);
+  border-radius: 10rem;
+  padding: 0.75rem 1.5rem;
+  border: 2px solid transparent;
+  transition: all 0.2s ease-out;
+}
+
+.btn:hover {
+  background-color: transparent;
+  border-color: var(--clr-white);
+}
+
+.card-sedan .btn:hover {
+  color: var(--clr-white);
+}
+.card-suv .btn:hover {
+  color: var(--clr-white);
+}
+.card-luxury .btn:hover {
   color: var(--clr-white);
 }
 
@@ -48,5 +125,5 @@ body {
   color: #333;
 }
 .jamoked-footer :is(a, a:visited) {
-  color: inherit;
+  color: var(--clr-luxury);
 }
